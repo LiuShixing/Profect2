@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>享乐网</title>
+		
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript">
+			function onbuttonclick(inpu){
+				var bs=inpu.parentNode.getElementsByTagName("input");
+				
+				for(var i=0;i<bs.length;i++)
+				{
+					bs[i].style.backgroundColor="white";
+				}
+				inpu.style.backgroundColor="rgb(226,28,1)";
+			}
+			
+			function onhotclick(mydiv){
+				var leftdiv=document.getElementById("leftdiv");
+				var rightdiv = document.getElementById("rightdiv");
+				
+				leftdiv.style.borderBottom="solid";
+				rightdiv.style.borderBottom="solid";
+				leftdiv.style.borderBottomWidth="1px";
+				rightdiv.style.borderBottomWidth="1px";
+				leftdiv.style.borderBottomColor="rgb(219,219,219)";
+				rightdiv.style.borderBottomColor="rgb(219,219,219)";
+				
+				mydiv.style.borderBottomWidth="0px";
+				
+				var latag = leftdiv.getElementsByTagName("a");
+				var ratag = rightdiv.getElementsByTagName("a");
+				
+				latag[0].style.borderColor="gray #FFFFFF";
+				ratag[0].style.borderColor="gray #FFFFFF";
+				
+				var nowa = mydiv.getElementsByTagName("a");
+				nowa[0].style.borderColor="red #FFFFFF";
+			}
+			function onhotclickmap(mydiv){
+				var leftdiv=document.getElementById("leftdivmap");
+				var rightdiv = document.getElementById("rightdivmap");
+				
+				leftdiv.style.borderBottom="solid";
+				rightdiv.style.borderBottom="solid";
+				leftdiv.style.borderBottomWidth="1px";
+				rightdiv.style.borderBottomWidth="1px";
+				leftdiv.style.borderBottomColor="rgb(219,219,219)";
+				rightdiv.style.borderBottomColor="rgb(219,219,219)";
+				
+				mydiv.style.borderBottomWidth="0px";
+				
+				
+				var latag = leftdiv.getElementsByTagName("a");
+				var ratag = rightdiv.getElementsByTagName("a");
+				
+				latag[0].style.borderColor="gray #FFFFFF";
+				ratag[0].style.borderColor="gray #FFFFFF";
+				
+				var nowa = mydiv.getElementsByTagName("a");
+				nowa[0].style.borderColor="red #FFFFFF";
+			}
+			function onbuttonclickzhidao(inpu){
+				var bs=inpu.parentNode.getElementsByTagName("input");
+				
+				for(var i=0;i<bs.length;i++)
+				{
+				
+				bs[i].style.borderBottom="solid";
+			
+				bs[i].style.borderBottomWidth="1px";
+			
+				bs[i].style.borderBottomColor="rgb(219,219,219)";
+				
+				}
+				inpu.style.borderBottomWidth="0px";
+				
+				var atags = inpu.parentNode.getElementsByTagName("a");
+				for(var j=0;j<atags.length;j++)
+				{
+					if(bs[j]==inpu)
+					{
+						atags[j].style.borderColor="red #FFFFFF";
+					}
+					else{
+				    	atags[j].style.borderColor="gray #FFFFFF";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		
+		<!--
+        	作者：1576168346@qq.com
+        	时间：2016-07-08
+        	描述：
+        -->
+		<div class="bodytop">
+			<div class="city">
+				<font class="qiehuan">切换城市：</font>
+				<input type="button" value="北京" />
+				<input type="button" value="上海" />
+				<input type="button" value="福州" />
+				<input type="button" value="广州" />
+				<input type="button" value="青岛" />
+				
+				<div class="rig">
+					<a href="#"><div class="im1"></div></a>
+					<a  href="#">加盟100度</a>
+					<font>|</font>
+					<a href="#"><div class="im2"></div></a>
+					<a  href="#">店铺管理</a>		
+				</div>								
+			</div>
+			<div class="classify">
+				
+				<div class="item">
+					<a href="#"><div class="im1"></div></a>
+					<font>美食</font>
+				</div>
+				
+				<div class="item">
+					<a href="#"><div class="im2">	</div></a>
+					<font>夜店</font>
+				</div>
+				
+				<div class="item">
+					<a href="#"><div class="im3">	</div></a>
+					<font>购物</font>
+				</div>
+				
+				<div class="item">
+					<a href="#"><div class="im4">	</div></a>
+					<font>文化</font>
+				</div>
+				
+				<div class="item">
+					<a href="#"><div class="im5">	</div></a>
+					<font>休闲</font>
+				</div>
+				
+				<div class="item6">
+					<a href="#"><img src="img/logo.png"/></a>
+				</div>
+				
+				<div class="item">
+					<a href="#"><div class="im7">	</div></a>
+					<font class="font2">烧客空间</font>
+				</div>
+				
+				
+				<div class="item">
+					<a href="#"><div class="im8">	</div></a>
+					<font class="font2">知道分子</font>
+				</div>
+			
+			    <div class="item">
+					<a href="#"><div class="im9">	</div></a>
+					<font class="font2">白吃白拿</font>
+				</div>
+				
+				<div class="item">
+					<a href="#"><div class="im10">	</div></a>
+					<font class="font2">烧客论坛</font>
+				</div>
+				
+				<div class="item">
+					<a href="#"><div class="im11">	</div></a>
+					<font class="font3">企业俱乐部</font>
+				</div>
+				
+				
+			</div>
+			<div class="navi">
+				<div class="background"></div>
+				<div class="background-red">
+					<input type="text" value="例如：..."/>
+					<a href="#"><div class="seach"></div></a>
+					<div class="link">
+						<a href="#">金钱豹,</a>
+						<a href="#">大江南，</a>
+						<a href="#">湘水之珠，</a>
+						<a href="#">德瑀楼</a>
+						<a href="#">荷塘鱼坊烤鱼，</a>
+						<a href="#">SOHO尚都，</a>
+						<a href="#">湘味楼...</a>
+						
+					</div>
+				</div>
+				<div class="buttonDiv" >
+					<input in  class="redbutton" type="button" value="搜店" onclick="onbuttonclick(this)"/>
+					<input type="button" value="地址" onclick="onbuttonclick(this)" />
+					<input  type="button" value="优惠券" onclick="onbuttonclick(this)" />
+					<input type="button" value="全文" onclick="onbuttonclick(this)" /> 	
+					<input  type="button" value="视频" onclick="onbuttonclick(this)" />
+				</div>
+				<div class="label"></div>
+				<div class="updateLable"></div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<!--
+        	作者：1576168346@qq.com
+        	时间：2016-07-08
+        	描述：bodycontent
+        -->
+        
+        <div class="bodymid">
+        	<div class="left">
+        		<div class="video">
+        			<div class="up">
+        				<font>WHAT'HOT</font>
+        				<div class="open"></div>
+        			</div>
+        			<a href="#"><img class="play" src="img/play_bg.gif" /></a>
+        			<div class="below">
+        				<div class="label"></div>
+        				<table>
+        					<tr>
+        						<td><img class="dot" src="img/dot.gif" /></td>
+        						<td><a href="#">现场实录：杭州机场系统崩溃</a></td>
+        					</tr>
+        					<tr>
+        						<td><img class="dot" src="img/dot.gif" /></td>
+        						<td><a href="#">现场实录：杭州机场系统崩溃</a></td>
+        					</tr>
+        					<tr>
+        						<td><img class="dot" src="img/dot.gif" /></td>
+        						<td><a href="#">现场实录：杭州机场系统崩溃</a></td>
+        					</tr>
+        				</table>
+        			</div>
+        		</div>
+        		
+        		
+        		
+        		<div class="hotshop">
+        			<div class="title">
+        				<div id="leftdiv" class="left" onclick="onhotclick(this) " >
+        					<font class="redfont">HOT SHOP</font>
+        					<font class="blackfont">红店铺</font>
+        					<span class="arr_down">
+        						<a class="arr_down"></a>
+        					</span>
+        				</div>
+        				<div class="center"></div>
+        				<div id="rightdiv" class="right" onclick="onhotclick(this) " >
+        					<font class="redfont">EW SHOP</font>
+        					<font class="blackfont">新开张</font>
+        					<span class="arr_down2">
+        						<a class="arr_down2"></a>
+        					</span>
+        				</div>
+        			</div>
+        			<div class="content">
+        				<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/hot_list_pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">御舟和涵珍园国际酒店</a>
+        						<br />
+        						<br />
+        						<p class="gray">区域省：朝阳/CBD</p>
+        						<p class="gray">人均：180元</p>
+        						<p class="gray">人气12321</p>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/hot_list_pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">御舟和涵珍园国际酒店</a>
+        						<br />
+        						<br />
+        						<p class="gray">区域省：朝阳/CBD</p>
+        						<p class="gray">人均：180元</p>
+        						<p class="gray">人气12321</p>
+        					</div>
+        				</div>
+        				<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/hot_list_pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">御舟和涵珍园国际酒店</a>
+        						<br />
+        						<br />
+        						<p class="gray">区域省：朝阳/CBD</p>
+        						<p class="gray">人均：180元</p>
+        						<p class="gray">人气12321</p>
+        					</div>
+        				</div>
+        			</div>
+        			<a class="more" href="#"><img src="img/more.gif"/></a>
+        		</div>
+        		
+        		
+        		
+        		<div class="ad1">
+        			<a href="#"><img src="img/ad/ad1.jpg" /></a>
+        		</div>
+        		<div class="calender">
+        			<div class="title">
+        				<div class="left">
+        					<font class="p1">LUCKY YODAY</font>
+        					<font class="p2">每日活动</font>
+        				</div>
+        				<font class="date">2014.2</font>
+        				<div class="label"></div>
+        			</div>
+        			<div class="theme">
+        				<a class="the_img"><img src="img/content/today1.gif"/></a>
+        				<div class="the_img_border"></div>
+        				<div class="content">
+        					<div class="tit">
+        						<font class="d">02</font>
+        						<font class="d">11</font>
+        						<font class="ti">本日主题：电商网站</font>        						
+        					</div>
+        					<font class="desc">迟到的荣誉——啦啦啦，现在还写电商网站，呃好吧，没词了~~</font>
+        				</div>
+        			</div>
+        			<div class="canle">
+        				<table>
+        					<tr>
+        						<td><font class="h">MON</font></td>
+        						<td><font class="h">TUE</font></td>
+        						<td><font class="h">WED</font></td>
+        						<td><font class="h">THU</font></td>
+        						<td><font class="h">FRI</font></td>
+        						<td><font class="h">SAT</font></td>
+        						<td><font class="h">SUN</font></td>
+        					</tr>
+        					<tr>
+        						<td><font class="dd">29</font></td>
+        						<td><font class="dd">30</font></td>
+        						<td><font class="d">1</font></td>
+        						<td><font class="d">2</font></td>
+        						<td><font class="d">3</font></td>
+        						<td><font class="d">4</font></td>
+        						<td><font class="d">5</font></td>
+        					</tr>
+        					<tr>
+        						<td><font class="d">6</font></td>
+        						<td><font class="d">7</font></td>
+        						<td><font class="d">8</font></td>
+        						<td><font class="d">9</font></td>
+        						<td><font class="d">10</font></td>
+        						<td><font class="d">11</font></td>
+        						<td><font class="d">12</font></td>
+        					</tr>
+        						<tr>
+        						<td><font class="d">13</font></td>
+        						<td><font class="d">14</font></td>
+        						<td><font class="d">15</font></td>
+        						<td><font class="d">16</font></td>
+        						<td><font class="d">17</font></td>
+        						<td><font class="d">18</font></td>
+        						<td><font class="d">19</font></td>
+        					</tr>
+        						<tr>
+        						<td><font class="d">20</font></td>
+        						<td><img src="img/content/today1.gif" class="d d21"></img></td>
+        						<td><font class="d">22</font></td>
+        						<td><font class="d">23</font></td>
+        						<td><font class="d">24</font></td>
+        						<td><img src="img/content/today2.gif" class="d d25"></img></td>
+        						<td><font class="d">26</font></td>
+        					</tr>
+        						<tr>
+        						<td><img src="img/content/hot_list_pic2.gif" class="d d27"></img></td>
+        						<td><font class="d">28</font></td>
+        						<td><img src="img/content/hot10.gif" class="d d29"></img></td>
+        						<td><img src="img/content/hot11.gif" class="d d30"></img></td>
+        						<td><font class="dd">31</font></td>
+        						<td><font class="dd">1</font></td>
+        						<td><font class="dd">2</font></td>
+        					</tr>
+        					</tr>
+        						<tr>
+        						<td><font class="dd">3</font></td>
+        						<td><font class="dd">4</font></td>
+        						<td><font class="dd">5</font></td>
+        						<td><font class="dd">6</font></td>
+        						<td><font class="dd">7</font></td>
+        						<td><font class="dd">8</font></td>
+        						<td><font class="dd">9</font></td>
+        					</tr>
+        				</table>
+        			</div>
+        		</div>
+        		<div class="recommend">
+        			<div class="title">
+        				<div class="left">
+        					<font class="red">RECOMMENDNE</font>
+        					<font class="black">精彩推荐</font>
+        				</div>
+        				<div class="label"></div>
+        			</div>
+        			<div class="images">
+        				<a href="#"><img class="big" src="img/content/img3.gif"/></a>
+        				<div class="list">
+        					<a><img src="img/content/img1.gif"/></a>
+        					<a><img class="i2" src="img/content/img2.gif"/></a>
+        					<a><img class="i2" src="img/content/img3.gif"/></a>
+        				</div>
+        				<font>爸爸去哪儿啦~</font>
+        			</div>
+        			<div class="content">
+        				<table>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico1.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">老店换新颖，丰泽园野重张亮相...</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico2.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">生活中哪些商品的包装有缺陷呢</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico1.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">老店换新颖，丰泽园野重张亮相...</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico2.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">生活中哪些商品的包装有缺陷呢</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico1.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">老店换新颖，丰泽园野重张亮相...</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico2.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">生活中哪些商品的包装有缺陷呢</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico1.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">老店换新颖，丰泽园野重张亮相...</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        					<tr>
+        						<td><img src="img/content/recommend_list_ico2.gif"/></td>
+        						<td>|</td>
+        						<td><a href="#">生活中哪些商品的包装有缺陷呢</a></td>
+        						<td>14/02/17</td>
+        					</tr>
+        				</table>
+        			</div>
+        		</div>
+        		<div class="map">
+        			<div class="title">
+        				<div id="leftdivmap" class="left" onclick="onhotclickmap(this) ">
+        					<font class="redfont">SUBWAY</font>
+        					<font class="blackfont">地铁交通</font>
+        					<span class="arr_down">
+        						<a class="arr_down"></a>
+        					</span>
+        				</div>
+        				<div class="center"></div>
+        				<div id="rightdivmap" class="right" onclick="onhotclickmap(this) ">
+        					<font class="redfont">MAP</font>
+        					<font class="blackfont">生活圈</font>
+        					<span class="arr_down2">
+        						<a class="arr_down2"></a>
+        					</span>
+        				</div>
+        			</div>
+        			<div class="content">
+        				<a href="#"><img src="img/content/123.gif" /></a>
+        			</div>
+        		</div>
+        		<div class="bbs">
+        			<div class="title">
+        				<font class="red">BBS</font>
+        				<font class="black">论坛</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			<div class="mid">
+        				<img src="img/content/bbs_img1.gif" />
+        				<div class="con">
+        					<a href="#">保你没见过的古怪餐厅</a>
+        					<font class="aa">阿瑞斯</font>
+        					<font class="one">ONE</font>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<a class="fo" >02</a>
+        				<a class="a1" href="#">保你没见过的古怪餐厅</a>
+        				<a class="a2" href="#">世说新语</a>
+        			</div>
+        			<div class="item">
+        				<a class="fo" >03</a>
+        				<a class="a1" href="#">保你没见过的古怪餐厅</a>
+        				<a class="a2" href="#">世说新语</a>
+        			</div>
+        			<div class="item">
+        				<a class="fo" >04</a>
+        				<a class="a1" href="#">保你没见过的古怪餐厅</a>
+        				<a class="a2" href="#">世说新语</a>
+        			</div>
+        			<div class="item">
+        				<a class="fo" >05</a>
+        				<a class="a1" href="#">保你没见过的古怪餐厅</a>
+        				<a class="a2" href="#">世说新语</a>
+        			</div>
+        			<div class="item">
+        				<a class="fo" >06</a>
+        				<a class="a1" href="#">保你没见过的古怪餐厅</a>
+        				<a class="a2" href="#">世说新语</a>
+        			</div>
+        			<div class="item">
+        				<a class="fo" >07</a>
+        				<a class="a1" href="#">保你没见过的古怪餐厅</a>
+        				<a class="a2" href="#">世说新语</a>
+        			</div>
+        		</div>
+        		
+        		
+        		
+        		<div class="ad2">
+        			<a href="#"><img src="img/ad/ad1.jpg" /></a>
+        		</div>
+        		        
+        		
+        		<div class="knownpeople">
+        			<div class="title">
+        				<font class="red">LIFESTYLE ADVICE</font>
+        				<font class="black">知道分子</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        				
+        			</div>
+        			<div class="navi">
+        				<input class="yourenwen" type="button" value="有人在问" onclick="onbuttonclickzhidao(this) " />
+        				<span class="arr_down">
+        						<a class="arr_down"></a>
+        				</span>
+        				<input type="button" value="有人知道"  onclick="onbuttonclickzhidao(this) "/>
+        				<span class="arr_down2">
+        						<a class="arr_down2"></a>
+        				</span>
+        				<input type="button" value="热门问题" onclick="onbuttonclickzhidao(this) " />
+        				<span class="arr_down3">
+        						<a class="arr_down3"></a>
+        				</span>
+        			</div>
+        			<div class="tit">
+        				<font>标题</font>
+        				<font>状态</font>
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        				<img class="rig" src="img/ico1.gif" />
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">老北京一尊黄牛一尊黄牛</a>
+        				<img class="rig" src="img/ico1.gif" />
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        				<img class="rig" src="img/ico1.gif" />
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">老北京一尊黄牛一尊黄牛</a>
+        				<img class="rig" src="img/ico1.gif" />
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        				<img class="rig" src="img/ico1.gif" />
+        			</div>
+        			<hr />
+        			<div class="seach">
+        				<font>搜搜谁知道：</font>
+        				<input class="in" type="text" />
+        				<a href="#"><img class="go" src="img/btn.gif" /></a>
+        			</div>
+        		</div>
+        		
+        		
+        		
+        		
+        		<div class="hot">
+        			<div class="title">
+        				<font class="red">HOT</font>
+        				<font class="black">红人烧客</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			
+        			<table>
+        				<tr>
+        					<td> <a href="#"><img src="img/content/hot1.gif"/></a></td>
+        					<td><a href="#"><img src="img/content/hot2.gif"/></a></td>
+        					<td colspan="2"><a href="#"><div class="info">
+        						<div>
+	        						<p class="p1">用户名：性感宝贝</p>
+	        						<p>区域：朝阳CBD</p>
+	        						<p>人气：1240987</p>
+        						</div>
+        					</div></a></td>
+        				
+        				</tr>
+        				<tr>
+        					<td><a href="#"><img src="img/content/hot4.gif"/></a></td>
+        					<td><a href="#"><img src="img/content/hot5.gif"/></a></td>
+        					<td><a href="#"><img src="img/content/hot6.gif"/></a></td>
+        					<td><a href="#"><img src="img/content/hot7.gif"/></a></td>
+        				</tr>
+        				<tr>
+        					<td><a href="#"><img src="img/content/hot8.gif"/></a></td>
+        					<td><a href="#"><img src="img/content/hot9.gif"/></a></td>
+        					<td><a href="#"><img src="img/content/hot10.gif"/></a></td>
+        					<td><a href="#"><img src="img/content/hot11.gif"/></a></td>
+        				</tr>
+        			</table>
+        		</div>
+        		
+        		
+        		
+        		
+        		
+        		<div class="help">
+        			<div class="title">
+        				<font class="red">HELP</font>
+        				<font class="black">在线帮助</font>
+        			</div>
+        			<font class="intro">您有任何问题，都可以通过全国免费电话，或通过在线客服与我们联系！</font>
+        			<div class="link">
+        				<div class="tel"></div>
+        				<font>4006-100-516</font>
+        				<div class="email"></div>
+        				<a href="#">100do.com@live.cn</a>
+        			</div>
+        			<hr />
+        			<div class="hp">
+        				<font class="h1">用户帮助</font>
+        				<font class="h2">商户帮助</font>
+        			</div>
+        			<div class="que">
+        				<div class="q1">
+        					<table>
+        						<tr>
+        							<td><img src="img/dot.gif"/></td>
+        							<td><a href="#">金币是什么</a></td>
+        						</tr>
+        						<tr>
+        							<td><img src="img/dot.gif"/></td>
+        							<td><a href="#">怎样查看我的等级</a></td>
+        						</tr>
+        						<tr>
+        							<td><img src="img/dot.gif"/></td>
+        							<td><a href="#">怎样赚积分</a></td>
+        						</tr>
+        					</table>
+        				</div>
+        				<div class="q2">
+        					<table>
+        						<tr>
+        							<td><img src="img/dot.gif"/></td>
+        							<td><a href="#">如何成为明星商户</a></td>
+        						</tr>
+        						<tr>
+        							<td><img src="img/dot.gif"/></td>
+        							<td><a href="#">邮件推广</a></td>
+        						</tr>
+        						<tr>
+        							<td><img src="img/dot.gif"/></td>
+        							<td><a href="#">论坛推广发法</a></td>
+        						</tr>
+        					</table>
+        				</div>
+        			</div>
+        		</div>
+        		
+        		
+        		
+        		<div class="media">
+        			<div class="title">
+        				<font class="red">100DU IN THE MEDIA</font>
+        				<font class="black">媒体声音</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			<div class="item">
+        				<img src="img/content/media1.gif" />
+        				<a href="#">日本最大的财经杂志《砖石周刊》对100度享乐网的报道</a>
+        			</div>
+        			<div class="item">
+        				<img src="img/content/media2.gif" />
+        				<a href="#">日本最大的财经杂志《砖石周刊》对100度享乐网的报道</a>
+        			</div>
+        			<div class="item">
+        				<img src="img/content/media3.gif" />
+        				<a href="#">日本最大的财经杂志《砖石周刊》对100度享乐网的报道</a>
+        			</div>
+        			<div class="item">
+        				<img src="img/content/media4.gif" />
+        				<a href="#">日本最大的财经杂志《砖石周刊》对100度享乐网的报道</a>
+        			</div>
+        		</div>
+        	</div>
+        	
+        	
+        	
+        	
+        	<div class="right">
+        		<div class="login">
+        			<div class="header">
+	        			<div class="title">
+	        				<font class="red">LOAD</font>
+	        				<font class="black">登录</font>
+	        			</div>
+        			</div>
+        			<table>
+        				<tr>
+        					<td >
+        						<font>用户名：</font>
+        					</td>
+        					<td >
+        						<input class="intext" name="username"  type="text" />
+        					</td>
+        					<td>
+        						<div class="jizhuwo">
+        							<input class="check" name="check" type="checkbox" />
+        							<font class="jizhu">记住我</font>
+        						</div>
+        					</td>
+        				</tr>
+        				<tr>
+        					<td>
+        						<font>密       码：</font>
+        					</td>
+        					<td>
+        						<input class="intext" name="password" type="text" />
+        					</td>
+        					<td>
+        						<input class="sub" type="submit" value="登录" />
+        					</td>
+        				</tr>
+        			</table>
+        			<div class="sigup">
+        				<img  src="img/dot.gif" />
+        				<a href="#">新用户注册</a>
+        				<img class="im2" src="img/dot.gif" />
+        				<a href="#">忘记密码了</a>
+        			</div>
+        		</div>
+        		
+        		<a href="#"><div class="roulette">
+        			
+        		</div></a>
+        		
+        		<a href="#"><div class="ad3">
+        			
+        		</div></a>
+        		
+        		<div class="qiang_juan">
+        			<div class="title">
+        				<font class="red">COUPONS</font>
+        				<font class="black">枪卷儿</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			<div class="navi">
+        				<input class="yourenwen" type="button" value="人气"  onclick="onbuttonclickzhidao(this)" />
+        				<span class="arr_down">
+        						<a class="arr_down"></a>
+        				</span>
+        				<input type="button" value="推荐"  onclick="onbuttonclickzhidao(this)" />
+        				<span class="arr_down2">
+        						<a class="arr_down2"></a>
+        				</span>
+        				<input type="button" value="最新"  onclick="onbuttonclickzhidao(this)"  />
+        				<span class="arr_down3">
+        						<a class="arr_down3"></a>
+        				</span>
+        			</div>
+        			<div class="tit">
+        				<font class="f1">商店名</font>
+        				<font class="f2">省</font>
+        				<font class="f3">打印</font>
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a href="#">老北京一尊黄牛</a>
+        				<font class="num">345</font>
+        				<font class="r">12%</font>     				
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a href="#">老北京一尊黄牛</a>
+        				<font class="num">345</font>
+        				<font class="r">12%</font>     				
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a href="#">老北京一尊黄牛</a>
+        				<font class="num">345</font>
+        				<font class="r">12%</font>     				
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a href="#">老北京一尊黄牛</a>
+        				<font class="num">345</font>
+        				<font class="r">12%</font>     				
+        			</div>
+        			<hr />
+        			<div class="item">
+        				<img src="img/dot.gif" />
+        				<a href="#">老北京一尊黄牛</a>
+        				<font class="num">345</font>
+        				<font class="r">12%</font>     				
+        			</div>
+        		
+        		</div>
+        		
+        		<div class="todayrecommend">
+        			<div class="title">
+        				<font class="red">SHOP</font>
+        				<font class="black">今日推荐</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			
+        			<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">汗莱国际美食百汇</a>
+        						<br />
+        						<p class="gray p1">口味：创意中餐</p>
+        						<p class="gray">区域：朝阳/CBD</p>
+        					</div>
+        			</div>
+        			<hr />
+        			<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">汗莱国际美食百汇</a>
+        						<br />
+        						<p class="gray p1">口味：创意中餐</p>
+        						<p class="gray">区域：朝阳/CBD</p>
+        					</div>
+        			</div>
+        			<hr />
+        			<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">汗莱国际美食百汇</a>
+        						<br />
+        						<p class="gray p1">口味：创意中餐</p>
+        						<p class="gray">区域：朝阳/CBD</p>
+        					</div>
+        			</div>
+        			<hr />
+        			<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">汗莱国际美食百汇</a>
+        						<br />
+        						<p class="gray p1">口味：创意中餐</p>
+        						<p class="gray">区域：朝阳/CBD</p>
+        					</div>
+        			</div>
+        			<hr />
+        		</div>
+        		
+        		
+        		
+        		
+        		<div class="shop360">
+        			<div class="title">
+        				<font class="red">360SHOP</font>
+        				<font class="black">全景逛店</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			<a href="#"><img class="bigimage" src="img/content/360.gif"/></a>
+        			<font>CBD核心商圈尊崇典范</font>
+        		</div>
+        		
+        		
+        		
+        		
+        		<div class="barginshop">
+        			<div class="title">
+        				<font class="red">SHOP</font>
+        				<font class="black">折扣店</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			<div class="item">
+        					<a class="imglink" href="#"><img  src="img/content/pic1.gif" /></a>
+        					<div class="con">
+        						<a href="#">汗莱国际美食百汇</a>
+        						<br />
+        						<p class="gray p1">口味：创意中餐</p>
+        						<p class="gray">区域：朝阳/CBD</p>
+        					</div>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">这里随便写点什么</a>
+        			</div>
+        				<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">这里随便写点什么</a>
+        			</div>
+        				<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">这里随便写点什么</a>
+        			</div>
+        				<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">这里随便写点什么</a>
+        			</div>
+        		</div>
+        		
+        		
+        		
+        		
+        		<div class="latestjoin">
+        			<div class="title">
+        				<font class="red">COUPONS</font>
+        				<font class="black">最新加盟</font>
+        				<a href="#"><img src="img/more.gif" /></a>
+        			</div>
+        			
+        			<div class="item">
+    					<a class="imglink" href="#"><img  src="img/content/pic1.gif" /></a>
+    					<div class="con">
+    						<a href="#">汗莱国际美食百汇</a>
+    						<br />
+    						<p class="gray p1">口味：创意中餐</p>
+    						<p class="gray">区域：朝阳/CBD</p>
+    					</div>
+        			</div>
+    				<div class="item item2222">
+    					<a class="imglink" href="#"><img  src="img/content/pic1.gif" /></a>
+    					<div class="con">
+    						<a href="#">汗莱国际美食百汇</a>
+    						<br />
+    						<p class="gray p1">口味：创意中餐</p>
+    						<p class="gray">区域：朝阳/CBD</p>
+    					</div>
+        			</div>
+        			
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">这里随便写点什么</a>
+        			</div>
+        				<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">这里随便写点什么</a>
+        			</div>
+        				<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[休闲]</a>
+        				<a href="#">老北京一尊黄牛</a>
+        			</div>
+        			<hr />
+        			<div class="item_list">
+        				<img src="img/dot.gif" />
+        				<a class="red" href="#">[美食]</a>
+        				<a href="#">这里随便写点什么</a>
+        			</div>
+        		
+        		</div>
+        	</div>
+        </div>
+        
+        <!--
+        	作者：1576168346@qq.com
+        	时间：2016-07-08
+        	描述：body bottom
+        -->
+        
+        <div class="bodybottom">    
+        	<div class="content">
+				<ul class="ul">
+					<li class="firstli"><a href="#">关于我们</a></li>
+					<li>|</li>
+					<li><a href="#">联系我们</a></li>
+					<li>|</li>
+					<li><a href="#">版权声明</a></li>
+					<li>|</li>
+					<li><a href="#">加入我们</a></li>
+					<li>|</li>
+					<li><a href="#">问题反馈</a></li>
+					<li>|</li>
+					<li><a href="#">友情链接</a></li>
+					<li>|</li>
+					<li><a href="#">网站地图</a></li>
+					<li>|</li>
+					<li><a href="#">视频索引</a></li>
+					
+				</ul>						
+
+			</div>	
+			<div class="copyright"><font>Copyright @ 2008 www.100du.com 100度享乐网 版权所有     京ICP证0843234</font></div>
+			
+        </div>
+        
+        <div class="bodybottomblanck">
+        	
+        </div>
+</body>
+</html>
